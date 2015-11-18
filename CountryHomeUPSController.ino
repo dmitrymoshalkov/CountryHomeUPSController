@@ -6,6 +6,7 @@
 #include <Bounce2.h>
 #include <avr/wdt.h>
 
+// Идентификатор ноды
 #define NODE_ID 90
 
 #define RELAY_ON 1  // GPIO value to write to turn on attached relay
