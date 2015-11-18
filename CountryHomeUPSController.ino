@@ -624,6 +624,7 @@ void incomingMessage(const MyMessage &message) {
 
      }
      
+     
      if (message.type==V_LIGHT && strlen(message.getString())>0 ) 
      {
          if ( message.sensor == CHILD_ID_RELAY ) 
