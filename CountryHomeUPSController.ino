@@ -416,7 +416,7 @@ int invertedValue; //analog value that we will send to the analog panel meter
       {    
 
 //          if (lightLevel != lastLightLevel1) {
-          if ((abs(lightLevel - lastLightLevel1) > 15 ) || boolRecheckSensorValues) {            
+          if ((abs(lightLevel - lastLightLevel1) > 20 ) || boolRecheckSensorValues) {            
            Serial.print("Lightlevel red: ");
             Serial.println(lightLevel);
             gw.send(BatteryLightMsg.set(lightLevel),true);
@@ -449,7 +449,7 @@ int invertedValue; //analog value that we will send to the analog panel meter
       {    
 
 //          if (lightLevel != lastLightLevel2) {
-          if ((abs(lightLevel - lastLightLevel2) > 15 ) || boolRecheckSensorValues) {             
+          if ((abs(lightLevel - lastLightLevel2) > 20 ) || boolRecheckSensorValues) {             
            Serial.print("Lightlevel green: ");
             Serial.println(lightLevel);
             gw.send(InputPowerLight.set(lightLevel),true);
